@@ -1,0 +1,16 @@
+{
+  "name": "jest-puppeteer-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "http-server . -p 80",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "jest": "^23.6.0",
+    "jest-puppeteer": "^3.4.0",
+    "puppeteer": "^1.8.0"
+  }
+}
