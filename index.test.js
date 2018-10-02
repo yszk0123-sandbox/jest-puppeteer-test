@@ -6,12 +6,12 @@ beforeAll(async () => {
 });
 
 test('should display `test` text on page', async () => {
-  await expect(page).toMatch('test');
+  await expect(page).toMatch('phpinfo');
 });
 
 test('should go to foo', async () => {
-  await expect(page).toClick('a[href^="/foo"]');
+  await expect(page).toClick('a[href^="phpinfo.php"]');
   await page.waitForNavigation();
-  await expect(page).toMatch('foo');
+  await expect(page).toMatch('PHP Version');
   await page.screenshot({ path: '.tmp/foo.png' });
 });

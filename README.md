@@ -1,7 +1,11 @@
 # Getting Started
 
 ```sh
-$ npm install
-$ npm run serve
-$ npm test
+cd docker-lamp
+docker-composer up
+```
+
+```sh
+npm install
+npm test
 ```
